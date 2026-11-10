@@ -1,5 +1,7 @@
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -23,18 +25,31 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -42,14 +57,190 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   10. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
+
+body {
+  background-color: #0d1117;
+  color: #f0f6fc;
+  font-family: "Roboto", "open-sans", "inter";
+  font-size: 18px;
+}
+
+#cabecalho {
+  padding: 16px;
+  background-color: #010409;
+
+}
+
+.lista-cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 16px;
+  padding: 0;
+}
+
+.lista-conteudo {
+  list-style: none;
+}
+
+.lista-conteudo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+@media (min-width: 700px) {
+  main {
+    padding: 32px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 24px;
+}
+
+@media (min-width: 700px) {
+  .container {
+    flex-direction: row;
+    align-items: self-start;
+    padding: 32px;
+  }
+}
+
+.conteudo-icon {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 4px solid #2c58a5;
+  border-radius: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.conteudo-icon img {
+  width: 172px;
+  height: 172px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+@media (min-width: 700px) {
+  .conteudo-icon {
+    width: 190px;
+    height: 190px;
+  }
+
+  .conteudo-icon img {
+    width: 182px;
+    height: 182px;
+  }
+}
+
+.conteudo-nome h1 {
+  font-size: 28px;
+  white-space: nowrap;
+}
+
+@media (min-width: 700px) {
+  .conteudo-nome h1 {
+    font-size: 36px;
+  }
+}
+
+.conteudo-sobre h2 {
+  font-size: 14px;
+  color: #79A9FF;
+}
+
+.conteudo-sobre p {
+  font-size: 16px;
+}
+
+@media {
+  .conteudo-sobre h2 {
+    font-size: 18px;
+  }
+
+  .conteudo-sobre p {
+    font-size: 20px;
+  }
+}
+
+.conteudo-stack {
+  padding: 24px 12px;
+  border-top: 1px solid #79A9FF;
+  padding-top: 48px;
+}
+
+.conteudo-stack h2 {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+
+.conteudo-stack-lista img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+@media (min-width: 700px) {
+  .conteudo-stack h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .conteudo-stack-lista img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.container-tecs {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+
+}
+
+.conteudo-stack-lista li {
+  padding: 10px;
+  border: 1px solid #79A9FF;
+  border-radius: 12px;
+  background-color: #f0f6fc;
+}
+
 

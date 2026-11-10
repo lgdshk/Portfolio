@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,129 +8,149 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header id="cabecalho">
         <nav id="menu-navegacao">
-            <ul>
-                <li>Tecnologias</li>
-                <li>Projetos</li>
-                <li>Contato</li>
+            <ul class="lista-cabecalho">
+                <li class="lista-conteudo"><a href="#tecnologias">Tecnologias</a> </li>
+                <li class="lista-conteudo"><a href="#projetos">Projetos</a></li>
+                <li class="lista-conteudo"><a href="#rodape">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="conteudo-principal" class="conteudo">
-        <div class="conteudo-icon">
-            <img src="https://placehold.co/400x400" alt="Foto minha" width="400" height="400"> 
-        </div>
+        <div class="container">
+            <div class="conteudo-icon">
+                <img src="https://placehold.co/400x400" alt="Foto minha">
+            </div>
 
-        <div class="contedo-nome">
-            <h1>Lucas Gabriel de Souza</h1>
-        </div>
-
-        <section class="conteudo-sobre">
-            <h2>Sobre mim</h2>
-
-            <p>
-                Tenho 22 anos e sou estudante do 1º semestre de Desenvolvimento de Software Multiplataforma na Fatec Marília. 
-                Meu contato inicial com a programação foi marcado pelo estudo da lógica de programação, utilizando C e C# 
-                para desenvolver habilidades de raciocínio lógico e resolução de problemas.
-            </p> 
-            <p>
-                Atualmente, também venho aprofundando meus conhecimentos em orientação a objetos, bancos de dados e 
-                desenvolvimento web, buscando ampliar minhas habilidades técnicas e explorar diferentes áreas da tecnologia.
-            </p>
-            <p>Tenho interesse em aprendizado contínuo e busco oportunidades para aplicar meus conhecimentos, adquirir experiência e crescer profissionalmente.</p>
-        </section>
-        
-        <section class="conteudo-stack">
-                <h2>Linguagens & Tecnologias</h2>
-
-                <div class="conteudo-stack-lista">
-                    <ul>
-                        <li><img src="./assets/images/logos/html5-original-wordmark.svg" alt=" HTML 5" width="80" height="80"></li>
-                        <li><img src="./assets/images/logos/css3-original-wordmark.svg" alt="CSS 3" width="80" height="80"></li>
-                        <li><img src="./assets/images/logos/javascript-original.svg" alt="JavaScript" width="70" height="70"></li>
-                        <li><img src="./assets/images/logos/git-original-wordmark.svg" alt="Git" width="80" height="80"></li>
-                        <li><img src="./assets/images/logos/c-original.svg" alt="Linguagem C" width="70" height="70"></li>
-                        <li><img src="./assets/images/logos/csharp-plain.svg" alt="Linguagem C#" width="80" height="80"></li>
-                        <li><img src="./assets/images/logos/postgresql-plain-wordmark.svg" alt="PostgreSQL" width="80" height="80"></li>
-                        <li><img src="./assets/images/logos/mysql-original-wordmark.svg" alt="MySQL" width="80" height="80"></li>
-                    </ul>
+            <div>
+                <div class="conteudo-nome">
+                    <h1>Lucas Gabriel de Souza</h1>
                 </div>
+
+                <section class="conteudo-sobre">
+                    <h2>Sobre mim</h2>
+                    <p>
+                        Tenho 22 anos e sou estudante do 1º semestre de Desenvolvimento de
+                        Software Multiplataforma na Fatec Marília. Comecei a programar estudando lógica com
+                        C e C#, e atualmente também aprofundo meus conhecimentos em orientação a objetos,
+                        bancos de dados e desenvolvimento web.
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <section id="tecnologias" class="conteudo-stack">
+            <h2>Linguagens & Tecnologias</h2>
+
+
+            <div class="conteudo-stack-lista">
+                <ul class="container-tecs">
+                    <li><img src="./assets/images/logos/html5-original-wordmark.svg" alt=" HTML 5"></li>
+                    <li><img src="./assets/images/logos/css3-original-wordmark.svg" alt="CSS 3"></li>
+                    <li><img src="./assets/images/logos/javascript-original.svg" alt="JavaScript"></li>
+                    <li><img src="./assets/images/logos/git-original-wordmark.svg" alt="Git"></li>
+                    <li><img src="./assets/images/logos/c-original.svg" alt="Linguagem C"></li>
+                    <li><img src="./assets/images/logos/csharp-plain.svg" alt="Linguagem C#"></li>
+                    <li><img src="./assets/images/logos/postgresql-plain-wordmark.svg" alt="PostgreSQL"></li>
+                    <li><img src="./assets/images/logos/mysql-original-wordmark.svg" alt="MySQL"></li>
+                </ul>
+            </div>
         </section>
 
-        <section id="Projetos" class="conteudo-projetos">
+        <section id="projetos">
             <h2>Projetos</h2>
 
-            <article class="projeto projeto-xadrez">
-                <div>
-                <img src="./assets/images/ProjetoXadrezPrompt.png" alt="Execução do Projeto de Xadrez">
-                </div>
+            <div class="projeto-container">
+                <article class="projeto projeto-xadrez">
+                    <div>
+                        <img src="./assets/images/ProjetoXadrezPrompt.png" alt="Execução do Projeto de Xadrez">
+                    </div>
 
-                <div class="projeto projeto-conteudo">
-                    <h3>Jogo de Xadrez em C#</h3>
-                    <p>
-                        Jogo de xadrez desenvolvido em C#, executado diretamente no terminal. O projeto aplica conceitos 
-                        de lógica de programação e orientação a objetos para implementar as regras, movimentações das peças 
-                        e funcionamento de uma partida.
-                    </p>
+                    <div class="projeto-conteudo">
+                        <h3>Jogo de Xadrez em C#</h3>
+                        <p>
+                            Jogo de xadrez desenvolvido em C#, executado diretamente no terminal. O projeto aplica
+                            conceitos
+                            de lógica de programação e orientação a objetos para implementar as regras, movimentações
+                            das peças
+                            e funcionamento de uma partida.
+                        </p>
 
-                    <span class="projeto-tag c-sharp">c#</span>
+                        <span class="projeto-tag c-sharp">c#</span>
 
-                    <a href="https://github.com/lgdshk/jogo-de-xadrez-csharp">Ver projeto -></a>
-                </div>
-            </article>
+                        <a href="https://github.com/lgdshk/jogo-de-xadrez-csharp">Ver projeto -></a>
+                    </div>
+                </article>
 
-            <article class="projeto projeto-pi">
-                <div>
-                    <img src="./assets/images/PIPlaceholder.png" alt="Codigo em jogo">
-                </div>
+                <article class="projeto projeto-pi">
+                    <div>
+                        <img src="./assets/images/PIPlaceholder.png" alt="Codigo em jogo">
+                    </div>
 
-                <div class="projeto projeto-conteudo">
-                    <h3>Codigo em Jogo</h3>
+                    <div class="projeto-conteudo">
+                        <h3>Codigo em Jogo</h3>
 
-                    <p>
-                        Plataforma educacional desenvolvida para auxiliar iniciantes no aprendizado de lógica de programação 
-                        por meio de conteúdos introdutórios, exemplos práticos e exercícios interativos. O projeto foi desenvolvido 
-                        como parte do Projeto Integrador da Fatec.
-                    </p>
+                        <p>
+                            Plataforma educacional desenvolvida para auxiliar iniciantes no aprendizado de lógica de
+                            programação
+                            por meio de conteúdos introdutórios, exemplos práticos e exercícios interativos. O projeto
+                            foi desenvolvido
+                            como parte do Projeto Integrador da Fatec.
+                        </p>
 
-                    <ul>
-                        <li class="projeto-tag html">HTML</li>
-                        <li class="projeto-tag css">CSS</li>
-                        <li class="projeto-tag js">JS</li>
-                    </ul>
+                        <ul>
+                            <li class="projeto-tag html">HTML</li>
+                            <li class="projeto-tag css">CSS</li>
+                            <li class="projeto-tag js">JS</li>
+                        </ul>
 
-                    <a href="https://github.com/Codigo-Em-Jogo/codigo-em-jogo">Ver projeto -></a>
-                </div>
-            </article>
+                        <a href="https://github.com/Codigo-Em-Jogo/codigo-em-jogo">Ver projeto -></a>
+                    </div>
+                </article>
 
-            <article>
-                <h3>Site de Receitas</h3>
+                <article class="projeto projeto-receitas">
 
-                <p>
-                    Site de receitas desenvolvido com HTML e CSS como exercício prático, com foco na estruturação 
-                    de páginas, organização de conteúdo e estilização de interfaces.
-                </p>
+                    <div>
+                        <img src="./assets/images/sitereceita.png" alt="Site de receitas">
+                    </div>
 
-                <ul>
-                    <li class="projeto-tag html">HTML</li>
-                    <li class="projeto-tag css">CSS</li>
-                </ul>
+                    <div class="projeto projeto-conteudo">
+                        <h3>Site de Receitas</h3>
 
-                <a href="https://github.com/lgdshk/site-de-receitas">Ver projeto -></a>
-                <a href="https://lgdshk.github.io/site-de-receitas/site-receitas/">Ver site</a>
-            </article>
+                        <p>
+                            Site de receitas desenvolvido com HTML e CSS como exercício prático, com foco na
+                            estruturação
+                            de páginas, organização de conteúdo e estilização de interfaces.
+                        </p>
+
+                        <ul>
+                            <li class="projeto-tag html">HTML</li>
+                            <li class="projeto-tag css">CSS</li>
+                        </ul>
+
+                        <a href="https://github.com/lgdshk/site-de-receitas">Ver projeto -></a>
+                        <a href="https://lgdshk.github.io/site-de-receitas/site-receitas/">Ver site</a>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer id="cabecalho" class="contato">
+    <footer id="rodape" class="contato">
         <ul>
             <li class="contato-link"><a href="lcsgabsouza@outlook.com">Enviar e-mail</a>></li>
-            <li class="contato-link"><a href="https://github.com/lgdshk">Github <img src="./assets/images/logos/github-original.svg" alt="github logo" width="20" height="20"></a></li>
-            <li class="contato-link"><a href="linkdedin.com.br">Linkedin <img src="./assets/images/logos/linkedin-original.svg" alt="linkedin logo" width="20" height="20"></a></li>
+            <li class="contato-link"><a href="https://github.com/lgdshk">Github <img
+                        src="./assets/images/logos/github-original.svg" alt="github logo" width="20" height="20"></a>
+            </li>
+            <li class="contato-link"><a href="linkdedin.com.br">Linkedin <img
+                        src="./assets/images/logos/linkedin-original.svg" alt="linkedin logo" width="20"
+                        height="20"></a></li>
         </ul>
     </footer>
 </body>
+
 </html>
