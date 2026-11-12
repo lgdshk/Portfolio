@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Gabriel de Souza - Portfólio</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header id="cabecalho">
-        <a href="#" class="logo">&lbrace;LGDSHK&rbrace;</a>
+        <a href="#" class="logo">&lbrace;lgdshk&rbrace;</a>
         <nav id="menu-navegacao">
             <ul class="lista-cabecalho">
                 <li class="lista-conteudo"><a href="#tecnologias">Tecnologias</a> </li>
@@ -24,7 +31,7 @@
     <main id="conteudo-principal" class="conteudo">
         <div class="container">
             <div class="conteudo-icon">
-                <img src="https://placehold.co/400x400" alt="Foto minha">
+                <img src="./assets/images/HomenzinhoFeio.jpg" alt="Foto minha">
             </div>
 
             <div>
@@ -37,7 +44,7 @@
                     <p>
                         Tenho 22 anos e sou estudante do 1º semestre de Desenvolvimento de
                         Software Multiplataforma na Fatec Marília. Comecei a programar estudando lógica com
-                        C e C#, e atualmente também aprofundo meus conhecimentos em orientação a objetos,
+                        C e C#, e atualmente também aprofundo meus conhecimentos em POO,
                         bancos de dados e desenvolvimento web.
                     </p>
                 </section>
@@ -73,20 +80,21 @@
 
                     <div class="projeto-conteudo">
 
-                    <ul>
-                        <li class="projeto-tag c-sharp">C#</li>
-                    </ul>
+                        <ul>
+                            <li class="projeto-tag c-sharp">C#</li>
+                        </ul>
 
                         <h3>Xadrez em C#</h3>
                         <p>
-                            Xadrez desenvolvido em C#, executado diretamente no terminal. O projeto aplica 
+                            Xadrez desenvolvido em C#, executado diretamente no terminal. O projeto aplica
                             lógica e POO para implementar as regras, movimentações
                             das peças
                             e funcionamento de uma partida.
                         </p>
 
-                        <div class="projeto-links contato-link github">    
-                            <a href="https://github.com/lgdshk/jogo-de-xadrez-csharp" target="_blank" rel="noopener noreferrer">
+                        <div class="projeto-links">
+                            <a href="https://github.com/lgdshk/jogo-de-xadrez-csharp" target="_blank"
+                                rel="noopener noreferrer">
                                 <img src="./assets/images/logos/github-original.svg" alt="Github Icon">Código</a>
                         </div>
                     </div>
@@ -111,13 +119,15 @@
                             Plataforma educacional desenvolvida para auxiliar iniciantes no aprendizado de lógica de
                             programação
                             por meio de conteúdos introdutórios, exemplos práticos e exercícios interativos.
-                        </p>    
+                        </p>
 
 
-                        <div class="projeto-links contato-link github">
-                            <a href="https://github.com/Codigo-Em-Jogo/codigo-em-jogo" target="_blank" rel="noopener noreferrer">
+                        <div class="projeto-links">
+                            <a href="https://github.com/Codigo-Em-Jogo/codigo-em-jogo" target="_blank"
+                                rel="noopener noreferrer">
                                 <img src="./assets/images/logos/github-original.svg" alt="Github Icon">Código</a>
-                            <a href="https://codigo-em-jogo.github.io/codigo-em-jogo/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://codigo-em-jogo.github.io/codigo-em-jogo/" target="_blank"
+                                rel="noopener noreferrer">
                                 <img src="./assets/images/logos/external-link.svg" alt="">Acessar site</a>
                         </div>
                     </div>
@@ -131,10 +141,10 @@
 
                     <div class="projeto-conteudo">
 
-                    <ul>
-                        <li class="projeto-tag html">HTML</li>
-                        <li class="projeto-tag css">CSS</li>
-                    </ul>
+                        <ul>
+                            <li class="projeto-tag html">HTML</li>
+                            <li class="projeto-tag css">CSS</li>
+                        </ul>
 
                         <h3>Site de Receitas</h3>
 
@@ -144,11 +154,67 @@
                             de páginas, organização de conteúdo e estilização de interfaces.
                         </p>
 
-                        <div class="projeto-links contato-link github">
-                            <a href="https://github.com/lgdshk/site-de-receitas" target="_blank" rel="noopener noreferrer">
+                        <div class="projeto-links">
+                            <a href="https://github.com/lgdshk/site-de-receitas" target="_blank"
+                                rel="noopener noreferrer">
                                 <img src="./assets/images/logos/github-original.svg" alt="Github Icon">Código</a>
-                            <a href="https://lgdshk.github.io/site-de-receitas/site-receitas/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://lgdshk.github.io/site-de-receitas/site-receitas/" target="_blank"
+                                rel="noopener noreferrer">
                                 <img src="./assets/images/logos/external-link.svg" alt="">Acessar site</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projeto projeto-salesweb">
+                    <div>
+                        <img src="./assets/images/saleswebmvc.png" alt="SalesWebMvc">
+                    </div>
+
+                    <div class="projeto-conteudo">
+
+                        <ul>
+                            <li class="projeto-tag html">HTML</li>
+                            <li class="projeto-tag c-sharp">C#</li>
+                            <li class="projeto-tag mysql">MySQL</li>
+                        </ul>
+
+                        <h3>SalesWebMVC</h3>
+
+                        <p>
+                            Sistema web de vendas desenvolvido com C#, ASP.NET Core MVC e MySQL.
+                            Aplica operações CRUD completas para gerenciar vendedores, departamentos e registros.
+                        </p>
+
+
+                        <div class="projeto-links">
+                            <a href="https://github.com/lgdshk/SalesWebMvc" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/images/logos/github-original.svg" alt="Github Icon">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projeto projeto-portfolio">
+                    <div>
+                        <img src="./assets/images/portfolio.png" alt="Meu Portfólio">
+                    </div>
+
+                    <div class="projeto-conteudo">
+                        <ul>
+                            <li class="projeto-tag html">HTML</li>
+                            <li class="projeto-tag css">CSS</li>
+                        </ul>
+
+                        <h3>Portfólio Pessoal</h3>
+
+                        <p>
+                            Meu portfólio pessoal responsivo desenvolvido com HTML e CSS para apresentar minhas
+                            habilidades, tecnologias e principais projetos.
+                        </p>
+
+                        <div class="projeto-links">
+                            <a href="https://github.com/lgdshk/Portifolio" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/images/logos/github-original.svg" alt="Github Icon">Código
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -161,12 +227,14 @@
             <div class="contato-container">
                 <ul>
                     <li class="contato-link"><a href="mailto:lcsgabsouza@outlook.com">
-                        <img src="./assets/images/logos/outlookicon..svg" alt="Outlook logo">E-mail</a></li>
-                    <li class="contato-link github"><a href="https://github.com/lgdshk" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/images/logos/github-original.svg" alt="github logo">Github</a>
+                            <img src="./assets/images/logos/outlookicon..svg" alt="Outlook logo">E-mail</a></li>
+                    <li class="contato-link github"><a href="https://github.com/lgdshk" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="./assets/images/logos/github-original.svg" alt="github logo">Github</a>
                     </li>
-                    <li class="contato-link"><a href="https://www.linkedin.com/in/lg-s-374988212/" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/images/logos/linkedin-original.svg" alt="linkedin logo">Linkedin</a></li>
+                    <li class="contato-link"><a href="https://www.linkedin.com/in/lg-s-374988212/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="./assets/images/logos/linkedin-original.svg" alt="linkedin logo">Linkedin</a></li>
                 </ul>
             </div>
         </section>
